@@ -1,0 +1,140 @@
+<!DOCTYPE>
+<html>
+<head>
+    <title>Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+    <div id="container">
+        <div id="modal-inicio">
+            <div id="modalI-conteudo">
+                <h1>Bem-vindo ao Quiz!</h1>
+                <p>Lógica de programação<br />
+                    PHP<br />
+                    Banco de dados
+                </p>
+                <button id="fechar">Iniciar o quiz</button>
+            </div>
+        </div>
+        
+        <div id="topo">
+            <div id="numQuestao"></div>
+            <div id="credito">
+                <br /><sub>Powered by Victor Reis Pereira <br/>github.com/victorreis08</sub>
+            </div>
+        </div>
+        <div id="questao" class="questao1">
+            <h2>1.Onde as variaveis ficam armazenadas ?</h2>
+        </div>
+        <div id="resposta" class="questao1">
+            <input name="quest1" id="Aquest1"  type="radio" value="A" onchange="mostrar()"><label for="Aquest1">Banco de dados</label><br />
+            <input name="quest1" id="Bquest1" type="radio" value="B" onchange="mostrar()"><label for="Bquest1">HD</label><br />
+            <input name="quest1" id="Cquest1" type="radio" value="C" onchange="mostrar()"><label for="Cquest1">Memória RAM</label><br />
+            <input name="quest1" id="Dquest1" type="radio" value="D" onchange="mostrar()"><label for="Dquest1">Armazenado no software</label><br />
+        </div>
+        <div id="questao" class="questao2">
+            <h2>2.Qual opção é uma estruturas de repetição ?</h2>
+        </div>
+        <div id="resposta" class="questao2">
+            <input name="quest2" id="Aquest2"  type="radio" value="A" onchange="mostrar()"><label for="Aquest2">for</label><br />
+            <input name="quest2" id="Bquest2" type="radio" value="B" onchange="mostrar()"><label for="Bquest2">if</label><br />
+            <input name="quest2" id="Cquest2" type="radio" value="C" onchange="mostrar()"><label for="Cquest2">else</label><br />
+            <input name="quest2" id="Dquest2" type="radio" value="D" onchange="mostrar()"><label for="Dquest2">array</label><br />
+        </div>
+        <div id="questao" class="questao3">
+            <h2>3.Qual Variável só aceita números inteiros ?</h2>
+        </div>
+        <div id="resposta" class="questao3">
+            <input name="quest3" id="Aquest3"  type="radio" value="A" onchange="mostrar()"><label for="Aquest3">Boolean</label><br />
+            <input name="quest3" id="Bquest3" type="radio" value="B" onchange="mostrar()"><label for="Bquest3">String</label><br />
+            <input name="quest3" id="Cquest3" type="radio" value="C" onchange="mostrar()"><label for="Cquest3">Float</label><br />
+            <input name="quest3" id="Dquest3" type="radio" value="D" onchange="mostrar()"><label for="Dquest3">Int</label><br />
+        </div>
+        <div id="questao" class="questao4">
+            <h2>4.Qual opção é uma estrutura condicional ?</h2>
+        </div>
+        <div id="resposta" class="questao4">
+            <input name="quest4" id="Aquest4"  type="radio" value="A" onchange="mostrar()"><label for="Aquest4">do...while</label><br />
+            <input name="quest4" id="Bquest4" type="radio" value="B" onchange="mostrar()"><label for="Bquest4">if...else</label><br />
+            <input name="quest4" id="Cquest4" type="radio" value="C" onchange="mostrar()"><label for="Cquest4">String</label><br />
+            <input name="quest4" id="Dquest4" type="radio" value="D" onchange="mostrar()"><label for="Dquest4">True</label><br />
+        </div>
+        <div id="questao" class="questao5">
+            <h2>5.Em PHP como se declara uma Variável  ?</h2>
+        </div>
+        <div id="resposta"  class="questao5">
+            <input name="quest5" id="Aquest5"  type="radio" value="A" onchange="mostrar()"><label for="Aquest5">var vairavel</label><br />
+            <input name="quest5" id="Bquest5" type="radio" value="B" onchange="mostrar()"><label for="Bquest5">int varivel</label><br />
+            <input name="quest5" id="Cquest5" type="radio" value="C" onchange="mostrar()"><label for="Cquest5">$variavel</label><br />
+            <input name="quest5" id="Dquest5" type="radio" value="D" onchange="mostrar()"><label for="Dquest5">variavel</label><br />
+        </div>
+        
+        <div id="questao"  class="questao6">
+            <h2>6.O que é função ?</h2>
+        </div>
+        <div id="resposta"  class="questao6">
+            <input name="quest6" id="Aquest6"  type="radio" value="A" onchange="mostrar()"><label for="Aquest6">Função é um tipo de variável</label><br />
+            <input name="quest6" id="Bquest6" type="radio" value="B" onchange="mostrar()"><label for="Bquest6">Função é uma estrutura de repetição</label><br />
+            <input name="quest6" id="Cquest6" type="radio" value="C" onchange="mostrar()"><label for="Cquest6">Função é uma estrutura condicional</label><br />
+            <input name="quest6" id="Dquest6" type="radio" value="D" onchange="mostrar()"><label for="Dquest6">Função é uma subrotina que executa uma tarefa</label><br />
+        </div>
+        
+        <div id="questao"  class="questao7">
+            <h2>7. Qual declaração devemos utilizar para efetuar uma consulta no Banco de dados ?</h2>
+        </div>
+        <div id="resposta"  class="questao7"> 
+            <input name="quest7" id="Aquest7"  type="radio" value="A" onchange="mostrar()"><label for="Aquest7">Select</label><br />
+            <input name="quest7" id="Bquest7" type="radio" value="B" onchange="mostrar()"><label for="Bquest7">Query</label><br />
+            <input name="quest7" id="Cquest7" type="radio" value="C" onchange="mostrar()"><label for="Cquest7">Consult</label><br />
+            <input name="quest7" id="Dquest7" type="radio" value="D" onchange="mostrar()"><label for="Dquest7">Get</label><br />
+        </div>
+        
+        <div id="questao"  class="questao8">
+            <h2>8.Qual chave é única e não pode ter valores repetidos ou nulos ?</h2>
+        </div>
+        <div id="resposta"  class="questao8">
+            <input name="quest8" id="Aquest8" type="radio" value="A" onchange="mostrar()"><label for="Aquest8">Chave estrangeira</label><br />
+            <input name="quest8" id="Bquest8" type="radio" value="B" onchange="mostrar()"><label for="Bquest8">Chave primária</label><br />
+            <input name="quest8" id="Cquest8" type="radio" value="C" onchange="mostrar()"><label for="Cquest8">Chave única</label><br />
+            <input name="quest8" id="Dquest8" type="radio" value="D" onchange="mostrar()"><label for="Dquest8">Chave de instância</label><br />
+        </div>
+        
+        <div id="questao"  class="questao9">
+            <h2>9.Quando interseccionarmos duas tabelas qual comando retorna dados das duas tabelas ?</h2>
+        </div>
+        <div id="resposta"  class="questao9">
+            <input name="quest9" id="Aquest9"  type="radio" value="A" onchange="mostrar()"><label for="Aquest9">Left join</label><br />
+            <input name="quest9" id="Bquest9" type="radio" value="B" onchange="mostrar()"><label for="Bquest9">Right join</label><br />
+            <input name="quest9" id="Cquest9" type="radio" value="C" onchange="mostrar()"><label for="Cquest9">Full join</label><br />
+            <input name="quest9" id="Dquest9" type="radio" value="D" onchange="mostrar()"><label for="Dquest9">Inner join</label><br />
+        </div>
+        
+        <div id="questao"  class="questao10">
+            <h2>10.Se quisermos atualizar um registro em uma tabela do banco de dados, qual declaração devemos utilizar? ?</h2>
+        </div>
+        <div id="resposta"  class="questao10">
+            <input name="quest10" id="Aquest10"  type="radio" value="A" onchange="questao10()"><label for="Aquest10">Modify</label><br />
+            <input name="quest10" id="Bquest10" type="radio" value="B" onchange="questao10()"><label for="Bquest10">Set</label><br />
+            <input name="quest10" id="Cquest10" type="radio" value="C" onchange="questao10()"><label for="Cquest10">Update</label><br />
+            <input name="quest10" id="Dquest10" type="radio" value="D" onchange="questao10()"><label for="Dquest10">Upgrade</label><br />
+        </div>
+    
+        
+        <button id="proxima" onclick="proxima()">Proxima Questão</button>
+        
+        <button id="enviar" class="enviar" onclick="enviar()">Enviar</button>
+    </div>
+    
+    <div id="modal">
+        <div id="modal-conteudo">
+            <h1>Você concluiu o quiz</h1>
+            <div id="carregar"></div>
+            <a href="quiz.html"><button id="voltar">Fazer de novo</button></a>
+        </div>
+    </div>
+<script src="JS/jquery-3.3.1.min.js" type="text/javascript"></script>
+<script src="JS/script.js" type="text/javascript"></script>
+</body>
+</html>
